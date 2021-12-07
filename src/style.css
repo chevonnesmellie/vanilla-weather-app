@@ -1,10 +1,15 @@
-body {
+.weather-app {
   max-width: 800px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 30px;
+  display: block;
+  margin: 40px auto;
 }
 
 ul {
   list-style: none;
-  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 .featured-city {
@@ -16,22 +21,25 @@ ul {
   color: purple;
 }
 
-.featured-temp {
-  font-family: "Baloo Bhaijaan 2", cursive;
+.featured-temp,
+.featured-emoji {
   font-size: 60px;
 }
 
 .celsius {
-  font-family: "Baloo Bhaijaan 2", cursive;
+  position: relative;
+  top: -25px;
+  left: -10px;
+  font-size: 25px;
 }
 
 .forecast-title,
 .card-title,
 .card-text {
-  font-family: "Baloo Bhaijaan 2", cursive;
   text-align: center;
 }
 
 footer {
   text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
