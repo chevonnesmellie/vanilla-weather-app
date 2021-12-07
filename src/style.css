@@ -1,3 +1,37 @@
-h1 {
-  color: yellow;
+body {
+  max-width: 800px;
+}
+
+ul {
+  list-style: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.featured-city {
+  font-size: 30px;
+}
+
+.humidity-temp {
+  font-weight: 700;
+  color: purple;
+}
+
+.featured-temp {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 60px;
+}
+
+.celsius {
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.forecast-title,
+.card-title,
+.card-text {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
