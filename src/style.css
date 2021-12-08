@@ -1,42 +1,67 @@
 .weather-app {
   max-width: 800px;
   font-family: "Baloo Bhaijaan 2", cursive;
-  border: 1px solid lightgray;
+  border: 1px solid d3d3d3;
   border-radius: 10px;
   padding: 30px;
   display: block;
   margin: 40px auto;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #236969;
+}
+
+.search-button {
+  background: #74f6a7;
+  color: white;
+  padding: 7px 58px;
+  font-weight: 700;
+  transition: all 2ms ease-in-out;
+}
+
+.search-button:hover {
+  background: white;
+  color: #74f6a7;
+  border: 1px solid #74f6a7;
 }
 
 .featured-city {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 .humidity-temp {
   font-weight: 700;
-  color: purple;
+  color: #74f6a7;
 }
 
 .featured-temp,
 .featured-emoji {
-  font-size: 60px;
+  font-size: 70px;
+  color: #236969;
 }
 
 .celsius {
   position: relative;
   top: -25px;
   left: -10px;
-  font-size: 25px;
+  font-size: 30px;
+  color: #236969;
 }
 
 .forecast-row {
   margin-top: 20px;
+}
+
+.day-forecast,
+.card-header {
+  border: none;
+  border-bottom: none;
 }
 
 .forecast-title,
@@ -45,7 +70,29 @@ ul {
   text-align: center;
 }
 
+.forecast-title {
+  color: #236969;
+}
+
+.high {
+  color: #74f6a7;
+  font-weight: bold;
+}
+
+.low {
+  color: #43a680;
+}
+
 footer {
   text-align: center;
   font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+a {
+  color: #43a680;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #43a680;
 }
