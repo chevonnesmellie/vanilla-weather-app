@@ -47,12 +47,17 @@ ul {
   color: #74f6a7;
 }
 
-.featured-temp,
-.featured-emoji {
+.featured-temp {
   position: relative;
   top: 30px;
   font-size: 70px;
   color: #236969;
+}
+
+#icon {
+  position: relative;
+  top: 28px;
+  left: -40px;
 }
 
 .celsius {
