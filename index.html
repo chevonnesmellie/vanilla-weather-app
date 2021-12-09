@@ -14,6 +14,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -40,19 +41,19 @@
       <div class="row">
         <div class="col-8">
           <ul>
-            <li class="featured-city">Toronto</li>
-            <li class="date-condition">Monday 8:48, snowing</li>
+            <li class="featured-city" id="city">Toronto</li>
+            <li class="date-condition"><span id="date">Monday 8:48,</span><span id="condition"> snowing</span></li>
             <li><span class="humidity-label">Humidity:</span>
-              <span class="humidity-temp">72%</span>
+              <span class="humidity-temp" id="humidity">72%</span>
               <span class="wind-label">Wind:</span>
-            <span class="humidity-temp">3.09km/h</span></li>
+            <span class="humidity-temp" id="wind">3.09km/h</span></li>
           </ul>
         </div>
         <div class="col-1 featured-emoji">
           ☀
         </div>
         <div class="col-3">
-          <span class="featured-temp">18
+          <span class="featured-temp" id="current-temp">18
           </span> 
             <span class="uom">
               <span class="celsius">°C</span>
