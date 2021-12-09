@@ -35,6 +35,13 @@ ul {
   font-weight: 700;
 }
 
+.date-condition {
+  position: relative;
+  top: -10px;
+  left: 5px;
+  font-size: smaller;
+}
+
 .humidity-temp {
   font-weight: 700;
   color: #74f6a7;
@@ -42,14 +49,15 @@ ul {
 
 .featured-temp,
 .featured-emoji {
+  position: relative;
+  top: 30px;
   font-size: 70px;
   color: #236969;
 }
 
 .celsius {
   position: relative;
-  top: -25px;
-  left: -10px;
+  left: -7px;
   font-size: 30px;
   color: #236969;
 }
