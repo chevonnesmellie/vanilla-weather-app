@@ -79,8 +79,10 @@ ul {
   font-weight: bold;
 }
 
-.low {
+.low,
+#condition {
   color: #43a680;
+  text-transform: capitalize;
 }
 
 footer {
