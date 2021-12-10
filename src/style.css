@@ -60,10 +60,10 @@ ul {
   left: -40px;
 }
 
-.celsius {
+.uom {
   position: relative;
   left: -7px;
-  font-size: 30px;
+  font-size: 25px;
   color: #236969;
 }
 
@@ -105,9 +105,15 @@ footer {
 
 a {
   color: #43a680;
+  color: #74f6a7;
   text-decoration: none;
 }
 
 a:hover {
   color: #43a680;
+}
+
+.uom .active {
+  color: #236969;
+  cursor: default;
 }
