@@ -32,7 +32,7 @@ function displayWeather(response) {
   document.querySelector(
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
-  document.querySelector("#wind").innerHTML = `${response.data.wind.speed}km/h`;
+  document.querySelector("#wind").innerHTML = `${response.data.wind.speed}m/s`;
   document
     .querySelector("#icon")
     .setAttribute(
@@ -76,6 +76,32 @@ function displayCelsiusTemp(event) {
     Math.round(celsiusTemperature);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row forecast-row" id="forecast">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `        <div class="col forecast-title">
+          <div class="card day-forecast">
+            <div class="card-header">
+              ${day}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">🌧</h5>
+              <p class="card-text"><span class="high">11° </span><span class="low"> 9°</span></p>
+            </div>
+          </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -88,3 +114,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 let celsiusTemperature = null;
 
 search("Toronto");
+displayForecast();
