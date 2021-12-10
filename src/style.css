@@ -25,9 +25,9 @@ ul {
 }
 
 .search-button:hover {
-  background: white;
-  color: #74f6a7;
-  border: 1px solid #74f6a7;
+  background: #43a680;
+  color: white;
+  border: 1px solid #43a680;
 }
 
 .featured-city {
