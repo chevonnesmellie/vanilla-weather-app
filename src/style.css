@@ -17,7 +17,7 @@ ul {
 }
 
 .search-button {
-  background: #74f6a7;
+  background: #43a680;
   color: white;
   padding: 7px 58px;
   font-weight: 700;
@@ -25,9 +25,9 @@ ul {
 }
 
 .search-button:hover {
-  background: #43a680;
+  background: #74f6a7;
   color: white;
-  border: 1px solid #43a680;
+  border: 1px solid #74f6a7;
 }
 
 .featured-city {
