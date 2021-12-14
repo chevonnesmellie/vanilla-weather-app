@@ -82,23 +82,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFarenheitTemp(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
-  document.querySelector("#current-temp").innerHTML = Math.round(
-    celsiusTemperature * (9 / 5) + 32
-  );
-}
-
-function displayCelsiusTemp(event) {
-  event.preventDefault();
-  farenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  document.querySelector("#current-temp").innerHTML =
-    Math.round(celsiusTemperature);
-}
-
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
@@ -138,13 +121,5 @@ function displayForecast(response) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let farenheitLink = document.querySelector("#farenheit-link");
-farenheitLink.addEventListener("click", displayFarenheitTemp);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
-
-let celsiusTemperature = null;
 
 search("Toronto");
