@@ -87,15 +87,15 @@ ul {
   color: #236969;
 }
 
-.high {
-  color: #74f6a7;
-  font-weight: bold;
-}
-
-.low,
-#condition {
+#condition,
+.low {
   color: #43a680;
   text-transform: capitalize;
+}
+
+.high {
+  color: #236969;
+  font-weight: bold;
 }
 
 footer {
