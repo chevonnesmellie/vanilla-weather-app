@@ -62,7 +62,7 @@ ul {
 
 .uom {
   position: relative;
-  left: -7px;
+  left: -3px;
   font-size: 25px;
   color: #236969;
 }
@@ -111,9 +111,4 @@ a {
 
 a:hover {
   color: #43a680;
-}
-
-.uom .active {
-  color: #236969;
-  cursor: default;
 }

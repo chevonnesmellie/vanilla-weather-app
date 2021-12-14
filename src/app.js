@@ -73,7 +73,12 @@ function displayWeather(response) {
 function search(city) {
   let apiKey = "35edd9e7e8e2b546aad3ee8914df1a70";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
+  axios
+    .get(apiUrl)
+    .then(displayWeather)
+    .catch((error) => {
+      alert(`The city "${city}" is unknown. Please try another city.`);
+    });
 }
 
 function handleSubmit(event) {
@@ -87,7 +92,6 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row forecast-row" id="forecast">`;
   let forecast = response.data.daily;
-  console.log(forecast);
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
